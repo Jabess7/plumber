@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Tamanho de Tubulação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .dispositivo-item {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .result {
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Tamanho de Tubulação</h1>
+
+    <div class="section">
+        <label for="tipoImovel">Selecione o tipo de imóvel:</label>
+        <select id="tipoImovel">
+            <option value="0.50">Habitação unifamiliar ou bifamiliar</option>
+            <option value="0.35">Multi-residencial</option>
+            <option value="0.70">Hotel</option>
+            <option value="0.75">Escola Geral</option>
+            <option value="1.00">Casa de Banho</option>
+            <option value="0.45">Institucional Geral</option>
+            <option value="0.25">Assembléia Geral</option>
+            <option value="0.70">Restaurante, Café</option>
+            <option value="0.60">Casa do Clube</option>
+            <option value="0.25">Negócios Geral</option>
+            <option value="1.00">Lavandaria</option>
+            <option value="0.90">Industrial Exclusivo</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <h3>Adicione os dispositivos de água:</h3>
+        <div id="dispositivosContainer">
+            <button id="addDispositivo" type="button">Adicionar Dispositivo</button>
+        </div>
+    </div>
+
+    <div class="section">
+        <button id="calcular" type="button">Calcular</button>
+    </div>
+
+    <div id="resultado" class="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
